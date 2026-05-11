@@ -1,6 +1,7 @@
 {% set python_min = "3.10" %}
 {% set name = "pythermo" %}
 {% set version = "0.3.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -27,7 +28,8 @@ requirements:
     - matplotlib
     - pandas
     - scipy
-    - matplotlib-base
+    - matplotlib
+    - pandas
 
 test:
   imports:
