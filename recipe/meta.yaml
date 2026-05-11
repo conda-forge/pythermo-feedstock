@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pythermo-{{ version }}.tar.gz
-  sha256: 3cf9b0fd51d8e949ad44ca0ce0c09892bdcc3dbeea37a6a9ce476318e472a9c7
+  sha256: 4fa03f9db6f4c93fdcd334fe049f4e9508e581d0dd8af652f49fb37b2dd295d6
 
 build:
   noarch: python
