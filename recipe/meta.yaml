@@ -1,5 +1,6 @@
 {% set name = "pythermo" %}
 {% set version = "0.3.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -16,14 +17,16 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools >=61.0
     - pip
   run:
-    - python >=3.7
+    - python {{ python_min }}
     - numpy
+    - numba
     - scipy
-    - matplotlib-base
+    - matplotlib
+    - pandas
 
 test:
   imports:
