@@ -22,6 +22,9 @@ requirements:
   run:
     - python >={{ python_min }}
     - numpy
+    - numba
+    - matplotlib
+    - pandas
     - scipy
     - matplotlib-base
 
